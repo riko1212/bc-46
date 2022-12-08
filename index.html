@@ -431,9 +431,77 @@
         </ul>
       </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop" data-modal>
       <div class="modal">
         <button type="button" class="modal-close" data-modal-close>X</button>
+        <p class="modal-title">Заголовок модального вікна</p>
+        <form class="modal-form">
+          <label class="modal-label"
+            ><span>Введіть імя</span>
+            <span class="input-wrap">
+              <input
+                type="text"
+                name="user-name"
+                class="modal-input"
+                placeholder="John"
+                required
+                minlength="2"
+              />
+              <svg class="modal-icon" width="18" height="18">
+                <use href="./img/icons.svg#icon-person"></use>
+              </svg>
+            </span>
+          </label>
+          <div class="modal-field">
+            <label for="user-tel" class="modal-label">Введіть Телефон</label>
+            <div class="input-wrap">
+              <input
+                type="tel"
+                name="user-tel"
+                class="modal-input"
+                placeholder="+380961111111"
+                required
+                id="user-tel"
+                value="+380"
+              />
+              <svg class="modal-icon" width="18" height="18">
+                <use href="./img/icons.svg#icon-person"></use>
+              </svg>
+            </div>
+          </div>
+          <input
+            type="emal"
+            name="user-email"
+            class="modal-input"
+            placeholder="Введіть пошту"
+          />
+          <div class="modal-field">
+            <label for="user-coment" class="modal-label">Введіть Телефон</label>
+            <textarea
+              name="user-coment"
+              id="user-coment"
+              placeholder="Коментар"
+              class="modal-text"
+            ></textarea>
+          </div>
+          <div class="modal-field">
+            <input
+              type="checkbox"
+              name="privacy"
+              id="privacy"
+              class="input-check visually-hidden"
+            />
+            <label for="privacy" class="check-text">
+              <span>
+                <svg class="check-icon" width="16" height="15">
+                  <use href="./img/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+              Privacy policy</label
+            >
+          </div>
+          <button type="submit" class="button">Send</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
@@ -443,3 +511,5 @@
     </script>
   </body>
 </html>
+
+user-name=Name &user-tel=%28096%29111-11-11 &user-email=test%40mail.ua
