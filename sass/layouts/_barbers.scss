@@ -1,0 +1,124 @@
+.barbers-pre-title {
+  color: #303030;
+  margin-bottom: 20px;
+}
+
+.barbers-title {
+  color: var(--second-title-color);
+  margin-bottom: 44px;
+}
+.barbers-list {
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 30px;
+}
+
+.barbers-item {
+  width: calc((100% - 60px) / 3);
+}
+
+.barbers-top-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.barbers-top-text {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.5;
+  padding: 40px;
+  background-color: rgba(255, 106, 0, 0.558);
+  transform: translateY(100%);
+  transition: transform 200ms linear;
+  overflow: auto;
+  .barbers-item:hover & {
+    transform: translateY(0);
+  }
+}
+
+.barbers-item-title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(25 / 18);
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #303030;
+  margin-bottom: 8px;
+  margin-top: 30px;
+}
+.barbers-item-text {
+  font-size: 14px;
+  line-height: 19px;
+  line-height: calc(19 / 14);
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+  margin-bottom: 30px;
+}
+
+.barbers-soc-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.barbers-soc-item {
+  width: 44px;
+  height: 44px;
+}
+
+.barbers-soc-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: tomato;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: #ffffff;
+  &:hover {
+    background-color: rgb(28, 0, 128);
+    fill: aquamarine;
+  }
+}
+
+/* .barbers-soc-link:hover {
+  background-color: rgb(28, 0, 128);
+}
+
+.barbers-soc-link:hover .barbers-soc-icon {
+  fill: aquamarine;
+} */
+
+.test-list {
+  display: flex;
+  gap: 30px;
+}
+
+.test-item {
+  width: calc((100% - 150px) / 6);
+  height: 90px;
+}
+
+.test-link {
+  width: 100%;
+  height: 100%;
+  border: 2px solid gray;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: gray;
+  &:hover {
+    border-color: rgb(239, 24, 24);
+    color: rgb(239, 24, 24);
+  }
+}
+
+.test-icon {
+  fill: currentColor;
+}
