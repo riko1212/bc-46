@@ -38,6 +38,11 @@ img {
   display: block;
 }
 
+.footer-container, .test-link, .barbers-soc-link, .soc__list, .header__container, .check-text span, .check-text, .modal-close, .pre-title {
+  display: flex;
+  align-items: center;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -81,8 +86,6 @@ body {
   font-size: 11px;
   line-height: 1.36;
   text-transform: uppercase;
-  display: flex;
-  align-items: center;
   gap: 20px;
 }
 .pre-title::before {
@@ -163,8 +166,6 @@ body {
   border-radius: 50%;
   background-color: transparent;
   border: 1px solid #999999;
-  display: flex;
-  align-items: center;
   justify-content: center;
 }
 
@@ -273,8 +274,6 @@ body {
 }
 
 .check-text {
-  display: flex;
-  align-items: center;
   position: relative;
 }
 .check-text span {
@@ -283,9 +282,7 @@ body {
   border: 2px solid #303030;
   border-radius: 3px;
   margin-right: 5px;
-  display: flex;
   justify-content: center;
-  align-items: center;
   fill: transparent;
 }
 .input-check:checked + .check-text span {
@@ -348,11 +345,6 @@ body {
   width: 100%;
   padding-top: 32px;
   padding-bottom: 32px;
-}
-
-.header__container {
-  display: flex;
-  align-items: center;
 }
 
 .navigation {
@@ -422,8 +414,6 @@ body {
 }
 
 .soc__list {
-  display: flex;
-  align-items: center;
   gap: 40px;
   transform: rotate(-90deg) translateY(100%);
   transform-origin: bottom left;
@@ -743,8 +733,6 @@ body {
   height: 100%;
   border-radius: 50%;
   background-color: tomato;
-  display: flex;
-  align-items: center;
   justify-content: center;
   fill: #ffffff;
 }
@@ -775,8 +763,6 @@ body {
   height: 100%;
   border: 2px solid gray;
   border-radius: 4px;
-  display: flex;
-  align-items: center;
   justify-content: center;
   color: gray;
 }
@@ -874,11 +860,6 @@ body {
 .footer {
   padding-top: 56px;
   padding-bottom: 56px;
-}
-
-.footer-container {
-  display: flex;
-  align-items: center;
 }
 
 .footer-copy {

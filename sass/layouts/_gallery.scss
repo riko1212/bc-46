@@ -12,5 +12,5 @@
 }
 
 .gallery-item {
-  width: calc((100% - 90px) / 4);
+  @include calc(4, 30px);
 }
