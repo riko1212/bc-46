@@ -1,3 +1,9 @@
+.benefits {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
 .benefits-continer {
   display: flex;
   padding-left: 115px;

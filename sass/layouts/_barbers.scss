@@ -9,12 +9,18 @@
 }
 .barbers-list {
   display: flex;
-  /* justify-content: space-between; */
+  flex-wrap: wrap;
   gap: 30px;
 }
 
 .barbers-item {
-  width: calc((100% - 60px) / 3);
+  width: 100%;
+  @include tablet {
+    @include calc(2, 30px);
+  }
+  @include desktop {
+    @include calc(3, 30px);
+  }
 }
 
 .barbers-top-wrap {
@@ -95,12 +101,19 @@
 
 .test-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
 .test-item {
-  @include calc(6, 30px);
   height: 90px;
+  @include calc(2, 30px);
+  @include tablet {
+    @include calc(3, 30px);
+  }
+  @include desktop {
+    @include calc(6, 30px);
+  }
 }
 
 .test-link {

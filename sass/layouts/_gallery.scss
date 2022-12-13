@@ -1,16 +1,25 @@
 .gallery-pre-title {
   color: #303030;
-  margin-bottom: 44px;
+  // margin-bottom: 44px;
+  margin-bottom: 71px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 44px;
+  }
 }
 
 .gallery-list {
   display: flex;
   flex-wrap: wrap;
-  /* gap: 30px; */
-  column-gap: 30px;
-  row-gap: 50px;
+  gap: 30px;
 }
 
 .gallery-item {
-  @include calc(4, 30px);
+  // @include calc(4, 30px);
+  width: 100%;
+  @include tablet {
+    @include calc(2, 30px);
+  }
+  @include desktop {
+    @include calc(4, 30px);
+  }
 }

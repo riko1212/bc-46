@@ -1,10 +1,12 @@
 .hero__container {
   display: flex;
+  padding: 0;
 }
 
 .hero__wrap {
   background-color: #726d6d;
-  padding: 272px 100px 208px;
+  // padding: 272px 100px 208px;
+  padding: 210px 30px;
   flex-grow: 2;
   /* background-image: linear-gradient(
       rgba(25, 28, 38, 0.2),
@@ -12,14 +14,23 @@
     ),
     url(../img/hero-bg.jpeg); */
   background-image: var(--bd-gradient), url(../img/hero-bg.jpeg);
+  @include tablet {
+    padding: 272px 100px 238px;
+  }
+  @include desktop {
+    padding-bottom: 208px;
+  }
 }
 
 .soc {
   width: 100px;
-  display: flex;
+  display: none;
   align-items: flex-end;
   padding-left: 27px;
   padding-bottom: 40px;
+  @include tablet {
+    display: flex;
+  }
 }
 
 .soc__list {
@@ -50,35 +61,47 @@
 
 .hero__title {
   font-family: 'Raleway', sans-serif;
-  font-size: 72px;
-  line-height: 1.18;
+  font-size: 42px;
+  line-height: 1.17;
   letter-spacing: 0.05em;
   color: var(--first-title-color);
   margin-bottom: 20px;
   display: flex;
   align-items: baseline;
-  &::before {
-    content: '';
-    width: 40px;
-    height: 40px;
-    background-color: #ffffff;
-    background-image: url(../img/about-img-2.jpeg);
-    background-size: contain;
+  @include mobile {
+    font-size: 48px;
   }
-  &::after {
-    content: '';
-    color: #ff6c00;
-    font-size: 50px;
+  @include desktop {
+    font-size: 72px;
+    line-height: 1.18;
   }
-  &:hover::before {
-    color: aquamarine;
-  }
+  // &::before {
+  //   content: '';
+  //   width: 40px;
+  //   height: 40px;
+  //   background-color: #ffffff;
+  //   background-image: url(../img/about-img-2.jpeg);
+  //   background-size: contain;
+  // }
+  // &::after {
+  //   content: '';
+  //   color: #ff6c00;
+  //   font-size: 50px;
+  // }
+  // &:hover::before {
+  //   color: aquamarine;
+  // }
 }
 
 .hero__after-title {
-  font-size: 18px;
-  line-height: 1.67;
+  font-size: 16px;
+  line-height: 1.62;
   letter-spacing: 0.02em;
   color: #9da4bd;
-  max-width: 360px;
+  max-width: 320px;
+  @include tablet {
+    font-size: 18px;
+    line-height: 1.67;
+    max-width: 360px;
+  }
 }
