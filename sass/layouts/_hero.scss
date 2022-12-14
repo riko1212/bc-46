@@ -13,12 +13,26 @@
       rgba(25, 28, 38, 0.2)
     ),
     url(../img/hero-bg.jpeg); */
-  background-image: var(--bd-gradient), url(../img/hero-bg.jpeg);
+  background-image: var(--bd-gradient), url(../img/hero-bg-mob.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  @include retina {
+    background-image: var(--bd-gradient), url(../img/hero-bg-mob-2x.jpeg);
+  }
   @include tablet {
     padding: 272px 100px 238px;
+    background-image: var(--bd-gradient), url(../img/hero-bg-tab.jpeg);
+    @include retina {
+      background-image: var(--bd-gradient), url(../img/hero-bg-tab-2x.jpeg);
+    }
   }
   @include desktop {
     padding-bottom: 208px;
+    background-image: var(--bd-gradient), url(../img/hero-bg.jpeg);
+    @include retina {
+      background-image: var(--bd-gradient), url(../img/hero-bg-2x.jpeg);
+    }
   }
 }
 
